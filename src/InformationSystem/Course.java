@@ -19,6 +19,7 @@ public class Course {
     void addTeacher(Teacher teacher){
         if(teacher.branch.equals(this.prefix)) {
             this.teacher = teacher; //dışarıdan aldıgımız teacher nesnesini içerideki teacher nesnesine eşitliyoruz.
+            System.out.println(teacher.name+ " " + teacher.branch + " dersine atandı.");
         }else{
             System.out.println("Öğretmen ve dersler uyusmuyor");
         }
