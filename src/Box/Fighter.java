@@ -8,15 +8,14 @@ public class Fighter {
     int dodge;
     int first;
 
-    Fighter(String name, int damage, int health, int weight, int dodge) {
+    Fighter(String name, int damage, int health, int weight, int dodge, int first) {
         this.name = name;
         this.damage = damage;
         this.health = health;
         this.weight = weight;
-        this.first = 0;
+        this.first = first;
 
-
-        if( dodge >= 0 && dodge <= 100){
+        if(dodge >= 0 && dodge <= 100){
             this.dodge = dodge;
         }else{
             this.dodge = 0;
