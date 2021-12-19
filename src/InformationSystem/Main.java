@@ -15,8 +15,8 @@ public class Main {
         Course bio = new Course("Biyoloji", "103", "BIO");
         bio.addTeacher(t3);
 
-        Student s1 = new Student("Mehmet","123","Matematik",matematik, fizik, bio);
-        s1.addBulkExamNote(90,50,60);
+        Student s1 = new Student("Mehmet","123","11/B",matematik, fizik, bio);
+        s1.addBulkExamNote(60,90,60,90,60,90);
         s1.isPass();
 
 
