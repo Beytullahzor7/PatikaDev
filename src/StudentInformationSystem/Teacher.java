@@ -1,4 +1,4 @@
-package InformationSystem;
+package StudentInformationSystem;
 
 public class Teacher {
     String name;
