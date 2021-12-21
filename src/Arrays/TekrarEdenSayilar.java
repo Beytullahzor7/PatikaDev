@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class TekrarEdenSayilar {
     public static void main(String[] args) {
-        int[] list = {3,7,3,7,4,5,6,1,2,9,8,9,8,4,4};
+        int[] list = {3,6,3,7,4,5,6,1,2,9,8,9,8,4,4};
         int[] duplicate = new int[list.length];
         int startIndex = 0;
 
@@ -12,7 +12,9 @@ public class TekrarEdenSayilar {
             for(int j = 0; j< list.length; j++){
                 if((i != j) && (list[i] == list[j])){
                     if(!isFind(duplicate, list[i])){
-                        duplicate[startIndex++] = list[i];
+                        if(list[i] % 2 == 0){
+                            duplicate[startIndex++] = list[i];
+                        }
                     }
                     break;
                 }
