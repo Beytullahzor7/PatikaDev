@@ -5,10 +5,10 @@ public class Main {
         Employee emp = new Employee("ali","0543","ali@gmail.com");
 
         Akademisyen a = new Akademisyen("Ahmet","0540","ahmet@gmail.com","eem","prof");
-        a.derseGir();
+        a.giris();
 
         Asistan b = new Asistan("abc","0","x","s","s","45");
-        b.quizYap();
+        //b.quizYap();
 
     }
 }
