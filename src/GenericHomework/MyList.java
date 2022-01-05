@@ -61,6 +61,78 @@ public class MyList <T> {
         return value;
     }
 
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append('[');
+        for(int i=0; i<size; i++){
+            if(elements[i] != null){
+                sb.append(elements[i].toString());
+            }
+            if(i < size-1){
+                if(elements[i] != null){
+                    sb.append(",");
+                }
+            }
+        }
+        sb.append(']');
+        return sb.toString();
+    }
+
+    public int indexOf(T data) {
+        for (int i = 0; i < size; i++) {
+            if(data==elements[i]) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    public int lastIndexOf(T data) {
+        for (int i = size; i >0; i--) {
+            if(data==elements[i]) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    public boolean isEmpty(){
+        if(size == 0)
+            return true;
+        return false;
+    }
+
+    public T[] toArray(){
+        Object array = Arrays.copyOf(elements, size);
+        return (T[]) array;
+    }
+
+    public void clear(){
+        Arrays.fill(elements, null);
+    }
+
+    public MyList<T> subList(int start, int finish) {
+        if (start >= size || start < 0 || finish >= size || finish < 0) {
+            throw new IndexOutOfBoundsException("Start: " + start +"Finish: "+finish+ ", Size " + size);
+        }
+        Object[] result= new Object[size];
+        int numberElements = finish-start;
+        System.arraycopy(elements, start + 1, result, 0 , numberElements);
+
+        return (MyList<T>)(Object)result;
+    }
+
+    public boolean contains(T data){
+        for(int i=0; i<size; i++){
+            if(data == elements[i]){
+                return true;
+            }
+        }
+        return false;
+    }
+
+
+
 
 
 
