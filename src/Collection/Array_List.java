@@ -30,14 +30,14 @@ public class Array_List {
         }
 
         List<Integer> liste2 = new ArrayList<>(); //listenin tüm elemanlarını yeni olusturdugumuz liste2 içerisine ekledik
-        liste.addAll(liste);
-        System.out.println(liste);
+        liste2.addAll(liste);
+        System.out.println(liste2);
 
         List<Integer> list3 = liste.subList(0,5); //alt liste olusturmak
 
-        /*Iterator<Integer> itr = liste.iterator();
+        Iterator<Integer> itr = list3.iterator();
         while (itr.hasNext()){
             System.out.println(itr.next());
-        }  */
+        }
     }
 }

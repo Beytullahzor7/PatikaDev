@@ -13,6 +13,12 @@ public class Main {
         Book b4 =  new Book("Ragmenciler", 300);
         Book b5 =  new Book("Feslegen", 345);
 
+        books.add(b1);
+        books.add(b2);
+        books.add(b3);
+        books.add(b4);
+        books.add(b5);
+
         TreeSet<Book> books2 = new TreeSet<>();
         books2.add(b1);
         books2.add(b2);

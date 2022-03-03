@@ -13,6 +13,11 @@ public class LinkedL {
         liste.add(" Zor");
         liste.add(" Java 102");
 
+        System.out.println(liste.get(1));
+
+        List<String> lst =  liste.subList(0,2);
+        System.out.println(lst);
+
         Iterator<String> itr = liste.iterator();
         while (itr.hasNext()){
             System.out.print(itr.next());

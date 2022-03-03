@@ -15,7 +15,6 @@ public class MapExample {
 
         System.out.println(capitalCities.get("England"));
         capitalCities.remove("England");
-        capitalCities.clear();
         capitalCities.size();
 
         for (String i : capitalCities.keySet()) {
