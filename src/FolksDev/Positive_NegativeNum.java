@@ -2,7 +2,7 @@ package FolksDev;
 
 import java.util.Scanner;
 
-public class Loop2 {
+public class Positive_NegativeNum {
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);

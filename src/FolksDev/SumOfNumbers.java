@@ -2,7 +2,7 @@ package FolksDev;
 
 import java.util.Scanner;
 
-public class Loop1 {
+public class SumOfNumbers {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Start entering numbers");

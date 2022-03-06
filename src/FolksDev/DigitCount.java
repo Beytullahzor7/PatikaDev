@@ -2,7 +2,7 @@ package FolksDev;
 
 import java.util.Scanner;
 
-public class Loop3 {
+public class DigitCount {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Start entering numbers: ");
