@@ -2,7 +2,7 @@ package FolksDev;
 
 import java.util.Scanner;
 
-public class DigitsSum {
+public class _4_DigitsSum {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter a number: ");

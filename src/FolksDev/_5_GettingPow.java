@@ -2,7 +2,7 @@ package FolksDev;
 
 import java.util.Scanner;
 
-public class GettinPow {
+public class _5_GettingPow {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 

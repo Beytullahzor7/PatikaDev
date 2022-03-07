@@ -2,7 +2,7 @@ package FolksDev;
 
 import java.util.Scanner;
 
-public class ReverseNumber {
+public class _6_ReverseNumber {
     public static void main(String[] args) {
         //123 -> 321
         Scanner input = new Scanner(System.in);
