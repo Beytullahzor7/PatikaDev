@@ -6,10 +6,10 @@ public class Main {
         Employee e1 = new Engineer("Beytullah", true);
         Employee w1 = new Worker("Ahmet");
 
-//        e1.work();
-//        System.out.println(e1.calculateSalary());
-//        w1.work();
-//        System.out.println(w1.calculateSalary());
+        e1.work();
+        System.out.println(e1.calculateSalary());
+        w1.work();
+        System.out.println(w1.calculateSalary());
 
         writeSalary(e1);
         writeSalary(w1);
