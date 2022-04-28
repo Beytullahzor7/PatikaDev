@@ -2,7 +2,7 @@ package FolksDev;
 
 public class _14_PalindromeString {
     public static void main(String[] args) {
-        System.out.println(isPalindrome("level"));
+        System.out.println(isPalindrome("never odd or even"));
 
         System.out.println(isPalindrome2("rotor"));
 
